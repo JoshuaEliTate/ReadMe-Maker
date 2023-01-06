@@ -1,0 +1,21 @@
+{
+  "name": "miniporject",
+  "version": "1.0.0",
+  "description": "a small project that will create a readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "yes"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "Josh",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
