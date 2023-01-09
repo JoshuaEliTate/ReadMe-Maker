@@ -62,7 +62,7 @@ inquirer
     })
 
     const writeAnswersToFile= (userAnswers)=>{
-        const initialData = `\n# Title \n${userAnswers.title} \n\n# Description \n${userAnswers.description} \n\n# Table of Contents \n${userAnswers.tableOfCont} \n\n# Installation \n${userAnswers.installation} \n\n# Usage \n${userAnswers.usage} \n\n# License \n${userAnswers.license} \n\n# Contributing \n${userAnswers.contributing} \n\n# Tests \n${userAnswers.tests} \n\n# Questions \nGitHub Account Page: https://github.com/${userAnswers.username} \nEmail: ${userAnswers.email}`
+        const initialData = `\n# Title \n${userAnswers.title} \n\n## Description \n${userAnswers.description} \n\n## Table of Contents \n${userAnswers.tableOfCont} \n\n## Installation \n${userAnswers.installation} \n\n## Usage \n${userAnswers.usage} \n\n## License \n${userAnswers.license} \n\n## Contributing \n${userAnswers.contributing} \n\n## Tests \n${userAnswers.tests} \n\n## Questions \nGitHub Account Page: https://github.com/${userAnswers.username} \nEmail: ${userAnswers.email}`
         fs.appendFile(
             'userAnswers.md',
              initialData,
@@ -73,7 +73,7 @@ inquirer
 
 
     // const writeAnswersToFile= (userAnswers)=>{
-    //     const initialData = `# First Name \n${userAnswers.name} \n\n# Last Name \n${userAnswers.lastName} \n\n# Favorite Language \n${userAnswers.FavoriteLang} \n`
+    //     const initialData = `## First Name \n${userAnswers.name} \n\n# Last Name \n${userAnswers.lastName} \n\n# Favorite Language \n${userAnswers.FavoriteLang} \n`
     //     fs.appendFile(
     //         'userAnswers.md',
     //          initialData,
